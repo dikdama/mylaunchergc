@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E22AB7B0-A0B4-41AB-8C60-0B0C889F9D2A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Grand_Chase_Launcher.My.MyApplication</StartupObject>
+    <RootNamespace>Grand_Chase_Launcher</RootNamespace>
+    <AssemblyName>Grand Chase Launcher</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Grand Chase Launcher.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Grand Chase Launcher.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonAtualizar.Designer.vb">
+      <DependentUpon>ButtonAtualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonAtualizar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonDoar.Designer.vb">
+      <DependentUpon>ButtonDoar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonDoar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonExit.Designer.vb">
+      <DependentUpon>ButtonExit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonExit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonGuia.Designer.vb">
+      <DependentUpon>ButtonGuia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonGuia.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonInicio.Designer.vb">
+      <DependentUpon>ButtonInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonInicio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonMinimize.Designer.vb">
+      <DependentUpon>ButtonMinimize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonMinimize.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonStaff.Designer.vb">
+      <DependentUpon>ButtonStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonStaff.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Launcher.Designer.vb">
+      <DependentUpon>Launcher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Launcher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogoGC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogoGC.Designer.vb">
+      <DependentUpon>LogoGC.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="News.Designer.vb">
+      <DependentUpon>News.vb</DependentUpon>
+    </Compile>
+    <Compile Include="News.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ButtonAtualizar.resx">
+      <DependentUpon>ButtonAtualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonDoar.resx">
+      <DependentUpon>ButtonDoar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonExit.resx">
+      <DependentUpon>ButtonExit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonGuia.resx">
+      <DependentUpon>ButtonGuia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonInicio.resx">
+      <DependentUpon>ButtonInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonMinimize.resx">
+      <DependentUpon>ButtonMinimize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonStaff.resx">
+      <DependentUpon>ButtonStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Launcher.resx">
+      <DependentUpon>Launcher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoGC.resx">
+      <DependentUpon>LogoGC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="News.resx">
+      <DependentUpon>News.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat68.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat69.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stat72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ready.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ready2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

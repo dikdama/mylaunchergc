@@ -18,6 +18,7 @@ Esse projeto contém um design idealizado e projetado por mim do launcher/starte
 - O projeto não contém lógica para ser um inicializador ainda, só conta com o layout gráfico e com algumas interações.
 - O objetivo é torna-lo um webclient para download, e um intermediário na checagem dos arquivos antes do jogo iniciar de fato, para que não ocorra nenhum erro potencial que possa impedir o arranque ou o tempo de execução do game.
 - Pretendo, assim que tiver tempo, criar toda a lógica que falta como citado acima e um pouco mais para torná-lo ideal, ainda mais, para cpu's low-end.
+- O código está limpo de leis/functions ou métodos empregados, isto quer dizer que qualquer amador na programação pode entender, por esse motivo não está comentado.
 
 ## Notas do contribuidor
 
@@ -43,6 +44,7 @@ This project contains a design idealized and designed by me of the Grand Chase l
 - The project does not contain logic to be an initiator yet, it only has the graphic layout and some interactions.
 - The goal is to make it a downloadable webclient, and an intermediary in checking the files before the game actually starts, so that there is no potential error that could prevent the game from starting or running.
 - I intend, as soon as I have time, to create all the missing logic as mentioned above and a little more to make it ideal, even more, for low-end CPUs.
+- The code is clear of laws / functions or methods used, this means that any amateur in programming can understand, for this reason it is not commented on.
 
 ## Contributor notes
 
